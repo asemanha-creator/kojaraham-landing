@@ -1,14 +1,117 @@
-ک کجای راهم؟
-خانه
-دربارهٔ ما
-برایِ درمانگران
-تماس
-ورود به اپ ←
-تماس
-گفت‌وگو را شروع کنید
-تلفن
-۰۹۰۱۵۰۹۱۳۴۶
-اینستاگرام
-dr_mojtaba_aghili
-برایِ استفاده از اپ، سوالاتِ متداول، یا فرمِ پیشنهاد/انتقاد، به اپِ کجای راهم؟ مراجعه کنید.
-آکادمیِ روان‌شناختیِ دکتر مجتبی عقیلی
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تماس با ما | کجای راهم؟</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#17383D; --ink-deep:#0E2529; --parchment:#F1E8D4; --parchment-2:#E8DCC0;
+  --gold:#B8873A; --rose:#8C4A3D; --text:#241C14; --text-soft:#5A5040;
+  --serif: 'Vazirmatn', sans-serif; --nastaliq:'Noto Nastaliq Urdu', serif;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--parchment); color:var(--text); font-family:var(--serif);
+  direction:rtl; line-height:1.9; font-size:17px;
+  background-image: radial-gradient(circle at 15% 8%, rgba(184,135,58,0.08), transparent 45%),
+                     radial-gradient(circle at 90% 85%, rgba(140,74,61,0.06), transparent 40%);
+}
+a{color:inherit; text-decoration:none;}
+img{max-width:100%;}
+
+.wrap{max-width:1080px; margin:0 auto; padding:0 28px;}
+
+/* ---------- nav ---------- */
+header{position:sticky; top:0; z-index:50; background:rgba(241,232,212,0.92); backdrop-filter:blur(8px); border-bottom:1px solid rgba(23,56,61,0.12);}
+nav.wrap{display:flex; align-items:center; justify-content:space-between; padding:16px 28px;}
+.brand{display:flex; align-items:center; gap:10px; font-weight:800; font-size:19px; color:var(--ink);}
+.brand .mark{width:34px;height:34px;border-radius:9px;background:linear-gradient(155deg,var(--ink),var(--ink-deep)); display:flex;align-items:center;justify-content:center; color:var(--gold); font-family:var(--nastaliq); font-size:20px; transform:rotate(-4deg);}
+.navlinks{display:flex; gap:28px; font-size:14.5px; font-weight:600;}
+.navlinks a{position:relative; padding:4px 0; color:var(--text-soft);}
+.navlinks a:hover, .navlinks a.active{color:var(--ink);}
+.navlinks a.active::after{content:"";position:absolute; right:0; bottom:-3px; width:100%; height:2px; background:var(--gold);}
+.navcta{background:var(--ink); color:var(--parchment)!important; padding:9px 20px; border-radius:999px; font-weight:700; font-size:13.5px;}
+
+/* ---------- hero ---------- */
+.hero{padding:76px 0 60px; position:relative; overflow:hidden;}
+.eyebrow{display:inline-flex; align-items:center; gap:8px; font-size:12.5px; font-weight:700; color:var(--rose); letter-spacing:.3px; margin-bottom:18px;}
+.eyebrow::before{content:"❋"; color:var(--gold);}
+h1{font-size:44px; font-weight:800; line-height:1.35; color:var(--ink); max-width:820px;}
+h1 .accent{color:var(--gold); font-style:normal;}
+.lede{font-size:17.5px; color:var(--text-soft); max-width:600px; margin-top:20px; line-height:2;}
+.hero-cta{display:flex; gap:14px; margin-top:32px; flex-wrap:wrap;}
+.btn{display:inline-block; padding:14px 30px; border-radius:12px; font-weight:700; font-size:15px; cursor:pointer; border:none;}
+.btn-primary{background:var(--ink); color:var(--parchment);}
+.btn-ghost{background:transparent; color:var(--ink); border:1.5px solid var(--ink);}
+
+/* ---------- verse (signature element) ---------- */
+.verse-box{margin-top:56px; border-right:3px solid var(--gold); padding-right:22px; max-width:520px;}
+.verse-label{font-size:11.5px; color:var(--gold); font-weight:700; margin-bottom:8px; letter-spacing:.5px;}
+.verse{font-family:var(--nastaliq); font-size:26px; color:var(--ink); line-height:2.1;}
+.verse-source{font-size:12.5px; color:var(--text-soft); margin-top:8px;}
+
+/* ---------- sections ---------- */
+section{padding:64px 0;}
+.section-title{font-size:28px; font-weight:800; color:var(--ink); margin-bottom:10px;}
+.section-sub{font-size:15px; color:var(--text-soft); max-width:600px; margin-bottom:36px; line-height:1.9;}
+.eyebrow-sm{font-size:12px; font-weight:700; color:var(--rose); margin-bottom:8px;}
+
+.grid{display:grid; gap:20px;}
+.grid-4{grid-template-columns:repeat(4,1fr);}
+.grid-3{grid-template-columns:repeat(3,1fr);}
+.grid-2{grid-template-columns:repeat(2,1fr);}
+@media(max-width:820px){.grid-4,.grid-3,.grid-2{grid-template-columns:1fr 1fr;}}
+@media(max-width:560px){.grid-4,.grid-3,.grid-2{grid-template-columns:1fr;} h1{font-size:32px;} .navlinks{display:none;}}
+
+.card{background:#fff; border:1px solid rgba(23,56,61,0.1); border-radius:16px; padding:26px; box-shadow:0 4px 18px rgba(23,56,61,0.05);}
+.card .num{font-family:var(--nastaliq); font-size:15px; color:var(--gold); margin-bottom:10px; display:block;}
+.card h3{font-size:17px; font-weight:800; color:var(--ink); margin-bottom:8px;}
+.card p{font-size:13.5px; color:var(--text-soft); line-height:1.85;}
+
+.band{background:var(--ink); color:var(--parchment);}
+.band .section-title, .band h2{color:var(--parchment);}
+.band .section-sub{color:rgba(241,232,212,0.75);}
+.band .card{background:rgba(241,232,212,0.06); border-color:rgba(241,232,212,0.15);}
+.band .card h3{color:var(--parchment);}
+.band .card p{color:rgba(241,232,212,0.7);}
+
+.stat{text-align:center;}
+.stat .n{font-size:38px; font-weight:800; color:var(--gold); font-family:var(--nastaliq);}
+.stat .l{font-size:13px; color:var(--text-soft); margin-top:4px;}
+.band .stat .l{color:rgba(241,232,212,0.7);}
+
+footer{padding:40px 0; border-top:1px solid rgba(23,56,61,0.12); font-size:13px; color:var(--text-soft); text-align:center;}
+footer a{color:var(--ink); font-weight:700;}
+
+.pagehead{padding:56px 0 20px;}
+.pagehead h1{font-size:34px;}
+
+.quote-block{border-right:3px solid var(--gold); padding-right:20px; margin:24px 0; font-size:15px; color:var(--text-soft); font-style:italic;}
+
+</style>
+</head>
+<body>
+<header><nav class="wrap">
+  <div class="brand"><span class="mark">ک</span> کجای راهم؟</div>
+  <div class="navlinks"><a href="index.html">خانه</a><a href="about.html">دربارهٔ ما</a><a href="therapists.html">برایِ درمانگران</a><a href="contact.html" class="active">تماس</a></div>
+  <a class="navcta" href="https://naghshe-rabete-ashy.vercel.app">ورود به اپ ←</a>
+</nav></header>
+
+<section class="pagehead"><div class="wrap">
+  <div class="eyebrow">تماس</div>
+  <h1>گفت‌وگو را شروع کنید</h1>
+</div></section>
+
+<section><div class="wrap">
+  <div class="grid grid-2">
+    <div class="card"><h3>تلفن</h3><p><a href="tel:+989015091346">۰۹۰۱۵۰۹۱۳۴۶</a></p></div>
+    <div class="card"><h3>اینستاگرام</h3><p><a href="https://instagram.com/dr_mojtaba_aghili" target="_blank">dr_mojtaba_aghili</a></p></div>
+  </div>
+  <p style="margin-top:24px;font-size:14px;color:var(--text-soft)">برایِ استفاده از اپ، سوالاتِ متداول، یا فرمِ پیشنهاد/انتقاد، به <a href="https://naghshe-rabete-ashy.vercel.app" style="color:var(--ink);font-weight:700">اپِ کجای راهم؟</a> مراجعه کنید.</p>
+</div></section>
+
+<footer><div class="wrap">آکادمیِ روان‌شناختیِ دکتر مجتبی عقیلی</div></footer>
+</body></html>
