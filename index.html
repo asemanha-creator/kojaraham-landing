@@ -103,6 +103,10 @@ footer a{color:var(--ink); font-weight:700;}
 
 .quote-block{border-right:3px solid var(--gold); padding-right:20px; margin:24px 0; font-size:15px; color:var(--text-soft); font-style:italic;}
 
+
+.card-link{display:block; text-decoration:none;}
+.card-link .card{transition:transform .15s, box-shadow .15s;}
+.card-link:hover .card{transform:translateY(-3px); box-shadow:0 10px 24px rgba(23,56,61,0.12);}
 </style>
 </head>
 <body>
@@ -144,11 +148,11 @@ footer a{color:var(--ink); font-weight:700;}
     <h2 class="section-title">چهار مسیرِ درمانی، برایِ چهار وضعیتِ متفاوت</h2>
     <p class="section-sub">هر مسیر، متناسب با نقطه‌ای که در آن ایستاده‌اید، طراحی شده — نه یک نسخه‌ی یکسان برایِ همه.</p>
     <div class="grid grid-4">
-      <div class="card"><span class="num">۱</span><h3>افزایشِ وفاداری و تعهد</h3><p>۲۰ جلسه — واکسیناسیونِ زوجی، پیش از بحران</p></div>
-      <div class="card"><span class="num">۲</span><h3>درمانِ مشترکِ زوجین</h3><p>۸ جلسه — بازسازیِ رابطه پس‌ازخیانت</p></div>
-      <div class="card"><span class="num">۳</span><h3>مسیرِ فردیِ خیانت‌دیده</h3><p>۳۰ جلسه — پردازشِ آسیب و بازسازیِ اعتماد</p></div>
-      <div class="card"><span class="num">۴</span><h3>مسیرِ فردیِ خیانت‌کرده</h3><p>۳۰ جلسه — مسئولیت‌پذیری و تغییرِ واقعی</p></div>
-      <div class="card"><span class="num">۵</span><h3>پیشگیری از خیانت</h3><p>ابزارِ خودآگاهیِ دوره‌ای — رایگان، برایِ همه</p></div>
+      <a href="https://naghshe-rabete-ashy.vercel.app/?goto=prevention" class="card-link"><div class="card"><span class="num">۱</span><h3>افزایشِ وفاداری و تعهد</h3><p>۲۰ جلسه — واکسیناسیونِ زوجی، پیش از بحران</p></div></a>
+      <a href="https://naghshe-rabete-ashy.vercel.app/?goto=relationship" class="card-link"><div class="card"><span class="num">۲</span><h3>درمانِ مشترکِ زوجین</h3><p>۸ جلسه — بازسازیِ رابطه پس‌ازخیانت</p></div></a>
+      <a href="https://naghshe-rabete-ashy.vercel.app/?goto=relationship" class="card-link"><div class="card"><span class="num">۳</span><h3>مسیرِ فردیِ خیانت‌دیده</h3><p>۳۰ جلسه — پردازشِ آسیب و بازسازیِ اعتماد</p></div></a>
+      <a href="https://naghshe-rabete-ashy.vercel.app/?goto=relationship" class="card-link"><div class="card"><span class="num">۴</span><h3>مسیرِ فردیِ خیانت‌کرده</h3><p>۳۰ جلسه — مسئولیت‌پذیری و تغییرِ واقعی</p></div></a>
+      <a href="https://naghshe-rabete-ashy.vercel.app/?goto=slipPrevention" class="card-link"><div class="card"><span class="num">۵</span><h3>پیشگیری از خیانت</h3><p>ابزارِ خودآگاهیِ دوره‌ای — رایگان، برایِ همه</p></div></a>
     </div>
   </div>
 </section>
@@ -182,12 +186,40 @@ footer a{color:var(--ink); font-weight:700;}
     <h2 class="section-title">سرمایه‌گذاری روی رابطه‌تان</h2>
     <p class="section-sub">هر بسته را می‌توانید یک‌جا بخرید، یا فقط همان جلسه‌ای که نیاز دارید را تکی تهیه کنید.</p>
     <div class="grid grid-4">
-      <div class="card"><h3>افزایشِ وفاداری</h3><p>۲۰ جلسه<br><b style="color:var(--gold);font-size:18px">۹,۵۰۰,۰۰۰ ت</b></p></div>
-      <div class="card"><h3>درمانِ پس‌ازخیانت (مشترک)</h3><p>۸ جلسه<br><b style="color:var(--gold);font-size:18px">۴,۰۰۰,۰۰۰ ت</b></p></div>
-      <div class="card"><h3>مسیرِ خیانت‌دیده</h3><p>۳۰ جلسه<br><b style="color:var(--gold);font-size:18px">۱۳,۵۰۰,۰۰۰ ت</b></p></div>
-      <div class="card"><h3>مسیرِ خیانت‌کرده</h3><p>۳۰ جلسه<br><b style="color:var(--gold);font-size:18px">۱۳,۵۰۰,۰۰۰ ت</b></p></div>
+      <a href="https://naghshe-rabete-ashy.vercel.app/?goto=prevention" class="card-link"><div class="card"><h3>افزایشِ وفاداری</h3><p>۲۰ جلسه<br><b style="color:var(--gold);font-size:18px">۹,۵۰۰,۰۰۰ ت</b><br><span style="font-size:11.5px;opacity:.75">هر جلسه ۴۷۵,۰۰۰ ت</span></p></div></a>
+      <a href="https://naghshe-rabete-ashy.vercel.app/?goto=relationship" class="card-link"><div class="card"><h3>درمانِ پس‌ازخیانت (مشترک)</h3><p>۸ جلسه<br><b style="color:var(--gold);font-size:18px">۴,۰۰۰,۰۰۰ ت</b><br><span style="font-size:11.5px;opacity:.75">هر جلسه ۵۰۰,۰۰۰ ت</span></p></div></a>
+      <a href="https://naghshe-rabete-ashy.vercel.app/?goto=relationship" class="card-link"><div class="card"><h3>مسیرِ خیانت‌دیده</h3><p>۳۰ جلسه<br><b style="color:var(--gold);font-size:18px">۱۳,۵۰۰,۰۰۰ ت</b><br><span style="font-size:11.5px;opacity:.75">هر جلسه ۴۵۰,۰۰۰ ت</span></p></div></a>
+      <a href="https://naghshe-rabete-ashy.vercel.app/?goto=relationship" class="card-link"><div class="card"><h3>مسیرِ خیانت‌کرده</h3><p>۳۰ جلسه<br><b style="color:var(--gold);font-size:18px">۱۳,۵۰۰,۰۰۰ ت</b><br><span style="font-size:11.5px;opacity:.75">هر جلسه ۴۵۰,۰۰۰ ت</span></p></div></a>
     </div>
     <p style="text-align:center;margin-top:20px;font-size:13px;color:rgba(241,232,212,0.7)">🎁 جلسه‌ی اول هر مسیر، کاملاً رایگان — پیش از خرید امتحان کنید.</p>
+
+    <div style="max-width:620px;margin:40px auto 0;background:rgba(241,232,212,0.06);border:1px solid rgba(241,232,212,0.15);border-radius:16px;padding:24px;">
+      <p style="text-align:center;font-size:14px;font-weight:700;margin-bottom:16px;">مقایسه با جلسه‌ی حضوری</p>
+      <div style="display:flex;justify-content:space-around;align-items:center;margin-bottom:18px;">
+        <div style="text-align:center;">
+          <div style="font-size:11px;opacity:.7;">جلسه‌ی حضوریِ ۴۵دقیقه‌ای</div>
+          <div style="font-size:22px;font-weight:800;color:rgba(241,232,212,0.9);text-decoration:line-through;text-decoration-color:var(--rose);">۱,۰۸۰,۰۰۰ ت</div>
+        </div>
+        <div style="font-size:20px;color:var(--gold);">←</div>
+        <div style="text-align:center;">
+          <div style="font-size:11px;opacity:.7;">هر جلسه‌ی آنلاین (میانگین)</div>
+          <div style="font-size:22px;font-weight:800;color:var(--gold);">~۴۶۹,۰۰۰ ت</div>
+        </div>
+      </div>
+      <p style="text-align:center;font-size:13px;color:var(--gold);font-weight:700;margin-bottom:20px;">حدودِ ۵۶٪ ارزان‌تر از جلسه‌ی حضوری</p>
+
+      <div class="grid grid-2" style="gap:14px;">
+        <div>
+          <p style="font-size:12.5px;font-weight:700;color:var(--gold);margin-bottom:8px;">✅ مزیت‌هایِ نسخه‌ی آنلاین</p>
+          <p style="font-size:12px;line-height:1.9;opacity:.85;">هزینه‌یِ به‌مراتب کمتر · بدونِ رفت‌وآمد یا وقتِ راه · هر زمان از شبانه‌روز، حتی نیمه‌شب · قابلِ‌مرور و بازخوانیِ دوباره · محرمانگیِ کامل، بدونِ نگرانیِ دیدارِ آشنا در محلِ مطب</p>
+        </div>
+        <div>
+          <p style="font-size:12.5px;font-weight:700;color:var(--rose);margin-bottom:8px;">◻ آنچه جلسه‌ی حضوری دارد</p>
+          <p style="font-size:12px;line-height:1.9;opacity:.85;">تعاملِ زنده و بازخوردِ آنیِ درمانگر · مدیریتِ مستقیمِ بحران‌هایِ حاد · گاهی سرعتِ پیشرفتِ متفاوت بسته به فرد</p>
+        </div>
+      </div>
+      <p style="text-align:center;font-size:11px;color:rgba(241,232,212,0.6);margin-top:16px;">بسیاری از زوج‌ها، از هردو ترکیبی استفاده می‌کنند: خودآموزیِ آنلاین + جلساتِ حضوریِ دوره‌ای.</p>
+    </div>
   </div>
 </section>
 
